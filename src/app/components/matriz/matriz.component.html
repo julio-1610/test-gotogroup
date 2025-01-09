@@ -3,5 +3,11 @@
   <input type="text" [(ngModel)]="jsonMatriz" placeholder="JSON Matriz">
   <button (click)="rotarMatriz()">Rotar</button>
   <h3>Resultado:</h3>
-  <div *ngIf="matrizRotada">{{ matrizRotada }}</div>
+  <!-- <div *ngIf="matrizRotada">{{ matrizRotada }}</div> -->
+
+  <div *ngIf="matrizRotada.length">
+    <div *ngFor="let fila of matrizRotada">
+      <span *ngFor="let columna of fila">{{ columna }}</span>
+    </div>
+  </div>
 </div>
