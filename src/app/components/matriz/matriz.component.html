@@ -1,1 +1,7 @@
-<p>Matriz works!</p>
+<div>
+  <h3>JSON Matriz input:</h3>
+  <input type="text" [(ngModel)]="jsonMatriz" placeholder="JSON Matriz">
+  <button (click)="rotarMatriz()">Rotar</button>
+  <h3>Resultado:</h3>
+  <div *ngIf="matrizRotada">{{ matrizRotada }}</div>
+</div>
