@@ -2,10 +2,8 @@
   <h3>JSON Matriz input:</h3>
   <input type="text" [(ngModel)]="jsonMatriz" placeholder="JSON Matriz">
   <button (click)="botonRotar()">Rotar</button>
-  <div *ngIf="errorJsonMatriz" class="error">{{ errorJsonMatriz }}</div>
+  <div *ngIf="errorJsonMatriz" class="error">FORMATOS VÁLIDOS NxN: [[X,X],[X,X]] | [[X,X,X],[X,X,X],[X,X,X]] | ...</div>
   <h3>Resultado:</h3>
-  <!-- <div *ngIf="matrizRotada">{{ matrizRotada }}</div> -->
-
   <div *ngIf="matrizRotada.length">
     <div *ngFor="let fila of matrizRotada">
       <span *ngFor="let columna of fila">{{ columna }}</span>
