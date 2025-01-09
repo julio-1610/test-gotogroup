@@ -4,7 +4,8 @@
     <input type="text" class="form-control" [(ngModel)]="jsonMatriz" placeholder="JSON Matriz">
     <button class="btn btn-primary ms-3" (click)="botonRotar()">Rotar</button>
   </div>
-  <div *ngIf="errorJsonMatriz" class="error">FORMATOS VÁLIDOS NxN: [[X,X],[X,X]] | [[X,X,X],[X,X,X],[X,X,X]] | ...</div>
+  <div *ngIf="errorJsonMatriz" class="error">FORMATOS VÁLIDOS NxN: [[X]] | [[X,X],[X,X]] | [[X,X,X],[X,X,X],[X,X,X]] |
+    ...</div>
   <h3 class="mt-3">Resultado:</h3>
   <div *ngIf="matrizRotada.length" class="mt-3 d-flex flex-column align-items-center">
     <div *ngFor="let fila of matrizRotada" class="d-flex flex-row justify-content-center">
