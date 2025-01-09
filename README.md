@@ -1,6 +1,8 @@
 # TestGotogroup
+## AUTHOR: JULIO GERARDO PAUCAR CASTILLO
+### This project is a test for the technique evaluation to work in the position of frontend developer for the Gotogroup enterprise.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16 and use [Bootstrap](https://getbootstrap.com) for the style of the website.
 
 ## Development server
 
